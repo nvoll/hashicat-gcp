@@ -1,7 +1,7 @@
 module "network" {
   source  = "app.terraform.io/hashicorp-gcp-1/network/google"
   version = "3.5.0"
-  project_id   = "var.project"
+  project_id   = var.project
   network_name = "gaurav-network"
   routing_mode = "GLOBAL"
   subnets = [
